@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Maven Release') {
       steps {
-        mavenPipeline()
+        mavenPipeline project: "Cheese", foo: "bar
       }
     }
   }
