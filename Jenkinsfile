@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Release') {
+    stage('Maven Release') {
       steps {
         mavenPipeline()
       }
