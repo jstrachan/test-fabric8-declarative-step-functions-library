@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Maven Release') {
       steps {
-        mavenPipeline(project: 'Cheese', foo: 'bar')
+        mavenPipeline(gitCloneUrl: 'git@github.com:jstrachan/test-fabric8-declarative-step-functions-library.git', containerName: 'maven-3.5')
       }
     }
   }
